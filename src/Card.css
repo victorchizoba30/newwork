@@ -36,11 +36,11 @@
     }
 }
 .maincard{
-    width: 100%;
+    width: 90%;
     text-align: center;
 }
 .cards{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -50,9 +50,16 @@
     font-size: 30px;
     margin: 0 auto;
     font-family: cursive;
+    color: teal;
 }
 .maincard input{
     margin: 10px;
     padding: 7px;
-    width: 90%;
+    width: 25%;
+    border: 2.5px solid teal;
+    border-radius: 5px;
+    background: lightgreen;
+    line-height: 25px;
+    color: rgb(179, 167, 9);
+    font-size: 15px;
 }

@@ -1,15 +1,23 @@
 import React from 'react';
 import Card from './Card';
-import {robots} from './robots';
+// import { robots } from './robots';
 
-const CardList = () => {
-    const newRobots = robots.map((item) => {
-        return(
-            <Card key={item.id} name={item.name} email={item.email} username={item.username} />
-        )
-    })
-    return newRobots
-    
+const CardList = ({ robots }) => {
+    return (
+        <div>
+            {
+                robots.map((item) => {
+                    return <Card key={item.id} name={item.name} email={item.email} username={item.username} />
+                })
+            }
+        </div>
+    );
+
+};
+
+
+
+
     // return(
     //     <div>
     //         <Card name={robots[0].name} email={robots[1].email} phone='08101111111' />
@@ -20,6 +28,6 @@ const CardList = () => {
     //         <Card name={robots[5].name} email={robots[6].email} phone='07101111111' />
     //     </div>
     // )
-}
+
 
 export default CardList;

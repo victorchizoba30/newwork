@@ -8,7 +8,7 @@ class App extends Component {
         super();
         this.state = {
             SearchBox: '',
-            newRobots: robots
+            robots: robots
         }
     }
 
@@ -18,15 +18,22 @@ class App extends Component {
     }
 
     render() {
-        console.log(this.state.SearchBox);
+        console.log(this.state.robots);
+        const filteredRobots = this.state.robots.filter((item) => {
+            return(
+                item.name.toLowerCase().includes(this.state.SearchBox.toLowerCase())
+            )
+        })
+
+        console.log(filteredRobots);
+
         return (
             <Fragment>
                 <h3>Robo Friends</h3>
-                <input type="search" placeholder="Search Friends" onChange={this.onSearchChange} />
+                <input type="search" placeholder="Search" onChange={this.onSearchChange} />
                 <div className='cards'>
-                    <Cardist robots={ this.state.newRobots } />
+                    <Cardist robots={ filteredRobots } />
                 </div>
-
             </Fragment>
         )
     }

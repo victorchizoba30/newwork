@@ -4,7 +4,7 @@ const SearchBox = () => {
     return(
         <>
             <h3>Robo Friends</h3>
-            <input type="search" placeholder="Search Friends"/>
+            <input type="search" placeholder="Search"/>
         </>
     )
 }
