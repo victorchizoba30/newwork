@@ -1,22 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './Card.css';
-import App from './app'
-import Footer from './footer'
+import './components/Card/Card.css';
+import App from './container/app'
+import 'tachyons';
+// import Footer from '../components/SearchBox/footer';
 // import Cardist from './CardList';
-import * as serviceWorker from './serviceWorker';
+// import * as serviceWorker from '../serviceWorker';
 
 
 ReactDOM.render(
     <div className='maincard'>
         <App />
-        <Footer />
+        {/* <Footer /> */}
     </div>,
     document.getElementById('root')
  );
 
-serviceWorker.register();
+// serviceWorker.register();
 
 
 //url for the project

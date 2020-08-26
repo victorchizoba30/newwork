@@ -22,7 +22,7 @@ import './Card.css';
 // using normal function
 
 const Card = (props) => {
-    return(
+    return (
         <div className='card'>
             <div>
                 <img src={`http://robohash.org/set_set5/${props.name}`} alt='' />

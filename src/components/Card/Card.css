@@ -55,7 +55,7 @@
 .maincard input{
     margin: 10px;
     padding: 7px;
-    width: 25%;
+    width: 90%;
     border: 2.5px solid teal;
     border-radius: 5px;
     background: lightgreen;
@@ -63,3 +63,4 @@
     color: rgb(179, 167, 9);
     font-size: 15px;
 }
+
